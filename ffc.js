@@ -2,16 +2,35 @@ console.log("working");
 
 
 
+function largestOfFour(arr) {
+  var max = 0;
+  for(var i = 0; i < arr.length; i++) {
+    for(var j = 0; j < arr.length; j++) {
+      if(arr[j] > max) {
+        max = arr[j];
+          console.log(max);
+      }
+    }
+  }
+
+  return arr;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+
+
+
 
 
 // reverse a string
 
-function reverseStr(str) {
-  var newStr = str.split("").reverse().join('');
-  console.log(newStr);
-  return newStr;
-}
-reverseStr("daniel");
+// function reverseStr(str) {
+//   var newStr = str.split("").reverse().join('');
+//   console.log(newStr);
+//   return newStr;
+// }
+// reverseStr("daniel");
 // // 2,3,4,5,6: +1
 // // 7,8,9: 0
 // // 10,J,Q,K,A: -1
