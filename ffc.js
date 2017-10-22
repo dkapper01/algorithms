@@ -2,21 +2,41 @@ console.log("working");
 
 
 
-function largestOfFour(arr) {
-  var max = 0;
-  for(var i = 0; i < arr.length; i++) {
-    for(var j = 0; j < arr.length; j++) {
-      if(arr[j] > max) {
-        max = arr[j];
-          console.log(max);
-      }
-    }
-  }
-
-  return arr;
+var person = {
+  firstName: "daniel",
+  lastName: "kapper",
+  dateOfBrith: 1989
 }
 
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+var Person = function(firstName, lastName, dateOfBrith) {
+  this.firstName = firstName,
+  this.lastName = lastName,
+  this.dateOfBrith = dateOfBrith
+}
+
+Person.prototype.calcuateAge = function() {
+  console.log(2017 - this.dateOfBrith); }
+
+var john = new Person("Gulcan", "Yayal", 1989);
+
+john.calcuateAge();
+
+// function largestOfFour(arr) {
+//   var max = 0;
+//   var arraySpot = 0;
+//   for(var i = 0; i < arr[i]; i++) {
+//     for(var j = 0; j < arr.length; j++) {
+//       if(arr[i] > max) {
+//         max = arr[j];
+//           console.log(max);
+//       }
+//     }
+//   }
+//
+//   return arr;
+// }
+//
+// largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
 
 
