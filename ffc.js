@@ -2,24 +2,56 @@ console.log("working");
 
 
 
-var person = {
-  firstName: "daniel",
-  lastName: "kapper",
-  dateOfBrith: 1989
+function largestOfFour(arr) {
+  var results = [];
+  for(var i = 0; i < arr.length; i++) {
+    var largestNum = arr[i][0];
+    for(var j = 0; j < arr[i].length; j++) {
+      if(arr[i][j] > results[i][largestNum]) {
+        largestNum = arr[i][j];
+      }
+    }
+    results[n] = largestNum;
+  }
+  return largestNum;
 }
 
-var Person = function(firstName, lastName, dateOfBrith) {
-  this.firstName = firstName,
-  this.lastName = lastName,
-  this.dateOfBrith = dateOfBrith
-}
+var test = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]];
 
-Person.prototype.calcuateAge = function() {
-  console.log(2017 - this.dateOfBrith); }
+// var done = largestOfFour(test);
+// console.log(done);
 
-var john = new Person("Gulcan", "Yayal", 1989);
 
-john.calcuateAge();
+
+  // for(var i = 0; i < numArr.length; i++) {
+  //   if(numArr[i] > max) {
+  //     max = numArr[i];
+  //   }
+  // }
+//   return max;
+// }
+//
+// console.log(findMax(numArr));
+
+
+// var person = {
+//   firstName: "daniel",
+//   lastName: "kapper",
+//   dateOfBrith: 1989
+// }
+//
+// var Person = function(firstName, lastName, dateOfBrith) {
+//   this.firstName = firstName,
+//   this.lastName = lastName,
+//   this.dateOfBrith = dateOfBrith
+// }
+//
+// Person.prototype.calcuateAge = function() {
+//   console.log(2017 - this.dateOfBrith); }
+//
+// var john = new Person("Gulcan", "Yayal", 1989);
+//
+// john.calcuateAge();
 
 // function largestOfFour(arr) {
 //   var max = 0;
