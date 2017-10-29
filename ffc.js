@@ -1,22 +1,41 @@
-console.log("working");
+console.log("connected....");
 
+// str.substr(start, [length]) where to start and the length
+// method returns the characters in a string beginning at the specified location through the specified number of characters.
 
+// str.substring(indexStart, [indexEnd]) take start location in Num and end num in num
+// method returns a subset of a string between one index and another, or through the end of the string.
 
-function largestOfFour(arr) {
-  var results = [];
-  for(var i = 0; i < arr.length; i++) {
-    var largestNum = arr[i][0];
-    for(var j = 0; j < arr[i].length; j++) {
-      if(arr[i][j] > results[i][largestNum]) {
-        largestNum = arr[i][j];
-      }
-    }
-    results[n] = largestNum;
+function truncateString(str, num) {
+
+  if(str.length > num && num > 3) {
+    newStr = str.slice(0, (num - 3)) + "...";
+    console.log(newStr);
+  } else if (str.length > num && num <= 3) {
+    shortStr = str.slice(0, num) + "...";
+    console.log(shortStr);
+  } else {
+    console.log(str);
   }
-  return largestNum;
 }
 
-var test = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]];
+truncateString("A-tisket a-tasket A green and yellow basket", 100);
+
+// function largestOfFour(arr) {
+//   var results = [];
+//   for(var i = 0; i < arr.length; i++) {
+//     var largestNum = arr[i][0];
+//     for(var j = 0; j < arr[i].length; j++) {
+//       if(arr[i][j] > results[i][largestNum]) {
+//         largestNum = arr[i][j];
+//       }
+//     }
+//     results[n] = largestNum;
+//   }
+//   return largestNum;
+// }
+//
+// var test = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]];
 
 // var done = largestOfFour(test);
 // console.log(done);
