@@ -1,4 +1,21 @@
+function caesarCipher(str, num) {
+  var lowerCaseString = str.toLowerCase();
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  var newString = '';
 
+  for(var i = 0; i < lowerCaseString.length; i++) {
+    var currentLetter = lowerCaseString[i];
+    var currentIndex = alphabet.indexOf(currentLetter);
+  }
+  var newIndex = currentIndex + num;
+  newString += alphabet[newIndex];
+
+  console.log(newString);
+}
+
+
+caesarCipher('Daniel', 1);
+// --------------------------------------------------------
 // FizzBuzz
 
 // "Write a program that prints the numbers from 1 to 100. But for
@@ -63,3 +80,27 @@
 //
 // harmlessRansomNote('the the note bob', 'the bob the paper maybe note')
 // ------------------------------------------------------
+
+// Is Palindrome
+
+// function isPalindrome(string) {
+//  string = string.toLowerCase();
+//  var charactersArr = string.split('');
+//  var validCharacters = 'abcdefghijklmnopqrstuvwxyz';
+//
+// var letterArr = [];
+//  charactersArr.forEach(function(char) {
+//    if(validCharacters.indexOf(char) > -1) {
+//      letterArr.push(char);
+//    }
+//  });
+//  return letterArr.join('') === letterArr.reverse().join('');
+// }
+//
+//
+//
+// console.log(
+//   isPalindrome("rrrrrR")
+// );
+// ------------------------------------------------------
+// Caesar Cipher
