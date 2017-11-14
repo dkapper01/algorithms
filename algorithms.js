@@ -1,20 +1,19 @@
-function caesarCipher(str, num) {
-  var lowerCaseString = str.toLowerCase();
-  var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  var newString = '';
+// function caesarCipher(str, num) {
+//   var lowerCaseString = str.toLowerCase();
+//   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+//   var newString = '';
 
-  for(var i = 0; i < lowerCaseString.length; i++) {
-    var currentLetter = lowerCaseString[i];
-    var currentIndex = alphabet.indexOf(currentLetter);
-  }
-  var newIndex = currentIndex + num;
-  newString += alphabet[newIndex];
+//   for(var i = 0; i < lowerCaseString.length; i++) {
+//     var currentLetter = lowerCaseString[i];
+//     var currentIndex = alphabet.indexOf(currentLetter);
+//   }
+//   var newIndex = currentIndex + num;
+//   newString += alphabet[newIndex];
+//   console.log(newString);
+// }
 
-  console.log(newString);
-}
 
-
-caesarCipher('Daniel', 1);
+// caesarCipher('Daniel', 1);
 // --------------------------------------------------------
 // FizzBuzz
 
@@ -104,3 +103,6 @@ caesarCipher('Daniel', 1);
 // );
 // ------------------------------------------------------
 // Caesar Cipher
+
+
+console.log('Working now')
